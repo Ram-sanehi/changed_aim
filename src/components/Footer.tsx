@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
-  Facebook, 
-  Twitter, 
-  Linkedin, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Facebook,
+  Twitter,
+  Linkedin,
   Instagram,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -46,18 +46,22 @@ export function Footer() {
           >
             <Link to="/" className="flex items-center gap-3">
               <div className="w-14 h-14 rounded-full overflow-hidden flex items-center justify-center shadow-lg border-2 border-primary/20">
-                <img src="/logo-circular1.png" alt="Alpha Investment Management" className="w-full h-full object-cover" />
+                <img
+                  src="/logo-circular1.png"
+                  alt="Alpha Investment Management"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div>
-                <h3 className="text-s font-display font-bold gold-text">Alpha Investment Management</h3>
-                {/* <p className="text-xs text-muted-foreground">Management Services</p> */}
-              </div>
+              <h3 className="text-s font-display font-bold gold-text">
+                Alpha Investment Management
+              </h3>
             </Link>
-            
+
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Your trusted partner for comprehensive wealth management and financial planning. 
-              Building secure financial futures since 2009.
+              Your trusted partner for comprehensive wealth management and
+              financial planning. Building secure financial futures since 2009.
             </p>
+
             <div className="flex gap-4">
               {[Facebook, Twitter, Linkedin, Instagram].map((Icon, index) => (
                 <a
@@ -127,28 +131,38 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                <MapPin className="h-5 w-5 text-primary mt-0.5" />
                 <span className="text-muted-foreground text-sm">
-                  Dwarka City Sector 2A,<br />
-                  Mahalunge Ingale, Chakan,<br />
+                  Dwarka City Sector 2A,
+                  <br />
+                  Mahalunge Ingale, Chakan,
+                  <br />
                   Pune, Maharashtra 410501
                 </span>
               </li>
               <li>
-                <a href="tel:+919607509586" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="tel:+919607509586"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-primary"
+                >
                   <Phone className="h-5 w-5 text-primary" />
-                  <span className="text-sm">+91 9607509586</span>
+                  +91 9607509586
                 </a>
               </li>
               <li>
-                <a href="mailto:alphainvestmentmnt@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="mailto:alphainvestmentmnt@gmail.com"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-primary"
+                >
                   <Mail className="h-5 w-5 text-primary" />
-                  <span className="text-sm">alphainvestmentmnt@gmail.com</span>
+                  alphainvestmentmnt@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground text-sm">Mon - Fri: 9:00 AM - 6:00 PM | Sat: 10:00 AM - 2:00 PM</span>
+                <span className="text-sm">
+                  Mon–Fri: 9AM–6PM | Sat: 10AM–2PM
+                </span>
               </li>
             </ul>
           </motion.div>
@@ -162,52 +176,46 @@ export function Footer() {
           className="mt-16 pt-12 border-t border-border"
         >
           <div className="max-w-2xl mx-auto text-center">
-            <h4 className="text-xl font-semibold mb-2">Subscribe to Our Newsletter</h4>
+            <h4 className="text-xl font-semibold mb-2">
+              Subscribe to Our Newsletter
+            </h4>
             <p className="text-muted-foreground text-sm mb-6">
-              Get the latest financial insights and market updates delivered to your inbox.
+              Get the latest financial insights and market updates delivered to
+              your inbox.
             </p>
             <form className="flex gap-3 max-w-md mx-auto">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1"
-              />
-              <Button type="submit" className="gold-gradient text-primary-foreground hover:opacity-90">
-                Subscribe
-              </Button>
+              <Input type="email" placeholder="Enter your email" />
+              <Button className="gold-gradient">Subscribe</Button>
             </form>
           </div>
         </motion.div>
       </div>
 
-   {/* Bottom bar */}
-<div id="footer-bottom" className="border-t border-border">
-  <div className="container mx-auto px-4 py-6">
-    <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-      <p>
-        © 2024 Alpha Investment Management Services. All rights reserved.
-        <br />
-        Built & operated by{" "}
-        <a
-          href="https://scalvex.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <strong>Scalvex</strong>
-        </a>
-        .
-      </p>
-      <div className="flex gap-6">
-        <Link to="/privacy" className="hover:text-primary transition-colors">
-          Privacy Policy
-        </Link>
-        <Link to="/terms" className="hover:text-primary transition-colors">
-          Terms of Service
-        </Link>
-        <Link to="/disclaimer" className="hover:text-primary transition-colors">
-          Disclaimer
-        </Link>
+      {/* Bottom bar */}
+      <div id="footer-bottom" className="border-t border-border">
+        <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+          <p>
+            © 2024 Alpha Investment Management Services. All rights reserved.
+            <br />
+            Built & operated by{" "}
+            <a
+              href="https://scalvex.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold hover:text-primary"
+            >
+              Scalvex
+            </a>
+            .
+          </p>
+
+          <div className="flex gap-6">
+            <Link to="/privacy">Privacy Policy</Link>
+            <Link to="/terms">Terms of Service</Link>
+            <Link to="/disclaimer">Disclaimer</Link>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
+    </footer>
+  );
+}
