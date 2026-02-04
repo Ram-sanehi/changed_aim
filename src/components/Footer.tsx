@@ -180,21 +180,34 @@ export function Footer() {
         </motion.div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-border">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>© 2024 Alpha Investment Management Services. All rights reserved. <br>
-              Built & operated by <a href="https://scalvex.com" target="_blank" rel="noopener noreferrer"><strong>Scalvex</strong></a>.
-            </p>
-            <div className="flex gap-6">
-              <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-              <Link to="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
-              <Link to="/disclaimer" className="hover:text-primary transition-colors">Disclaimer</Link>
-            </div>
-          </div>
-        </div>
+   {/* Bottom bar */}
+<div id="footer-bottom" className="border-t border-border">
+  <div className="container mx-auto px-4 py-6">
+    <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+      <p>
+        © 2024 Alpha Investment Management Services. All rights reserved.
+        <br />
+        Built & operated by{" "}
+        <a
+          href="https://scalvex.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>Scalvex</strong>
+        </a>
+        .
+      </p>
+      <div className="flex gap-6">
+        <Link to="/privacy" className="hover:text-primary transition-colors">
+          Privacy Policy
+        </Link>
+        <Link to="/terms" className="hover:text-primary transition-colors">
+          Terms of Service
+        </Link>
+        <Link to="/disclaimer" className="hover:text-primary transition-colors">
+          Disclaimer
+        </Link>
       </div>
-    </footer>
-  );
-}
+    </div>
+  </div>
+</div>
